@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 public class ThrowItem : MonoBehaviour
@@ -45,6 +46,10 @@ public class ThrowItem : MonoBehaviour
 
     private void HandleInput()
     {
+        // If the game is paused, don't process touch for throwing
+        if (Time.timeScale == 0)
+            return;
+
         // Check if there's at least one touch
         if (Input.touchCount > 0)
         {
@@ -52,6 +57,12 @@ public class ThrowItem : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
+                // Check if touch started on a UI element
+                if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+                {
+                    return; // Ignore this touch
+                }
+
                 startSwipePos = touch.position;
                 isDragging = true;
                 rb.useGravity = false;
@@ -68,6 +79,7 @@ public class ThrowItem : MonoBehaviour
             }
         }
     }
+
 
     private void HandleDrag()
     {
