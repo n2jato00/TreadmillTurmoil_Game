@@ -47,13 +47,13 @@ public class ThrowItem : MonoBehaviour
     private void HandleInput()
     {
         // If the game is paused, don't process touch for throwing
-        if (Time.timeScale == 0)
+        if (Time.timeScale == 0 || !PauseManager.canThrow) // Tarkista canThrow-tila
             return;
 
-        // Check if there's at least one touch
-        if (Input.touchCount > 0)
+        // Check if there are any touches
+        for (int i = 0; i < Input.touchCount; i++)
         {
-            Touch touch = Input.GetTouch(0); // Get the first touch
+            Touch touch = Input.GetTouch(i);
 
             if (touch.phase == TouchPhase.Began)
             {
@@ -63,6 +63,7 @@ public class ThrowItem : MonoBehaviour
                     return; // Ignore this touch
                 }
 
+                // Handle the touch for throwing
                 startSwipePos = touch.position;
                 isDragging = true;
                 rb.useGravity = false;
@@ -71,10 +72,13 @@ public class ThrowItem : MonoBehaviour
             {
                 endSwipePos = touch.position;
                 isDragging = false;
-                rb.useGravity = true;
+                
+
                 if (Vector2.Distance(startSwipePos, endSwipePos) > minSwipeThreshold)
                 {
+                    rb.useGravity = true;
                     ThrowBall();
+                    PauseManager.canThrow = false;
                 }
             }
         }

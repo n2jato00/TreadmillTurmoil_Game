@@ -52,6 +52,7 @@ public class ItemRespawn : MonoBehaviour
                                 mainCamera.transform.right * lateralOffsetFromCamera;
 
         currentItem = Instantiate(randomItemPrefab, spawnPosition, Quaternion.identity);
+        PauseManager.canThrow = true;
     }
 
     private void OnDestroy()

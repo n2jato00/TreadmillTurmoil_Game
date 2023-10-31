@@ -3,7 +3,7 @@ using UnityEngine;
 public class PanelHandler : MonoBehaviour
 {
     public GameObject CurrentPanel;  // This will be your main menu panel
-    public GameObject MenuPanel;     // This will be your options panel
+    public GameObject SecondPanel;     // This will be your options panel
 
     // This method toggles between the main menu and options
     public void TogglePanels()
@@ -11,11 +11,11 @@ public class PanelHandler : MonoBehaviour
         if (CurrentPanel.activeSelf)
         {
             CurrentPanel.SetActive(false);
-            MenuPanel.SetActive(true);
+            SecondPanel.SetActive(true);
         }
         else
         {
-            MenuPanel.SetActive(false);
+            SecondPanel.SetActive(false);
             CurrentPanel.SetActive(true);
         }
     }
@@ -24,6 +24,6 @@ public class PanelHandler : MonoBehaviour
     public void ShowMainMenu()
     {
         CurrentPanel.SetActive(true);
-        MenuPanel.SetActive(false);
+        SecondPanel.SetActive(false);
     }
 }
