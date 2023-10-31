@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class BodyPartHitReaction : MonoBehaviour
 {
-    [Tooltip("Liikkumisnopeus kun hahmoa ei ole osuttu.")]
+    [Tooltip("Movement speed when the character is not hit.")]
     public float forwardSpeed = 1f;
 
-    [Tooltip("Kuinka nopeasti hahmo liikkuu taaksepäin osuman jälkeen.")]
+    [Tooltip("How fast the character moves backward after being hit.")]
     public float hitReactionSpeed = 2f;
 
-    [Tooltip("Kuinka kauan hahmo liikkuu taaksepäin osuman jälkeen.")]
+    [Tooltip("How long the character moves backward after being hit.")]
     public float hitReactionDuration = 0.5f;
-    [Tooltip("Hahmon maksimi Z-arvo.")]
+
+    [Tooltip("Maximum Z-axis value for the character.")]
     public float maxZValue = 10f;
 
     private float hitReactionEndTime;
@@ -30,32 +31,29 @@ public class BodyPartHitReaction : MonoBehaviour
     {
         if (isHit && Time.time < hitReactionEndTime)
         {
-            // Liikuta hahmoa Z-akselin suunnassa taaksepäin.
+            // Move the character backward along the Z-axis.
             transform.Translate(Vector3.back * hitReactionSpeed * Time.deltaTime);
         }
         else
         {
             isHit = false;
 
-            // Jos hahmo on lähellä tai yli maksimi Z-arvon, aseta sen sijainti maksimiin.
+            // If the character is near or beyond the maximum Z-value, set its position to the maximum.
             if (transform.position.z <= maxZValue)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, maxZValue);
             }
             else
             {
-                // Liikuta hahmoa Z-akselin suunnassa eteenpäin.
+                // Move the character forward along the Z-axis.
                 transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
             }
         }
     }
 
-
     private void HandleBodyPartHit(string bodyPart)
     {
         isHit = true;
         hitReactionEndTime = Time.time + hitReactionDuration;
-
-
     }
 }
