@@ -33,7 +33,7 @@ public class PlayerScoreManager : MonoBehaviour
         UpdateMultiplierText();
     }
 
-    void UpdateScore(string bodyPart)
+    void UpdateScore(string bodyPart, Rigidbody rb)
     {
         int zMultiplier = CalculateZMultiplier();
 

@@ -31,7 +31,7 @@ public class ItemRespawn : MonoBehaviour
         }
     }
 
-    private void HandleHitEvent(string bodyPart)
+    private void HandleHitEvent(string bodyPart, Rigidbody rb)
     {
         if (currentItem != null)
         {

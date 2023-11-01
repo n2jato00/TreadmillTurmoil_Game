@@ -19,24 +19,46 @@ public class PlayerAnimationHandler : MonoBehaviour
         BodyPartHitDetection.OnBodyPartHit -= PlayHitAnimation;
     }
 
-    void PlayHitAnimation(string bodyPart)
+    void PlayHitAnimation(string bodyPart, Rigidbody rb)
     {
-        if (bodyPart == "Head")
+        string triggerName = bodyPart;
+
+        float objectMass = rb.mass;
+        string weight;
+
+        if (objectMass < 5.0f)
         {
-            animator.SetTrigger("HeadHit");
+            weight = "Light";
         }
-        else if (bodyPart == "Torso")
+        else if (objectMass < 11.0f)
         {
-            animator.SetTrigger("TorsoHit");
+            weight = "Normal";
         }
-        else if (bodyPart == "Arm")
+        else
         {
-            animator.SetTrigger("ArmHit");
+            weight = "Heavy";
         }
-        else if (bodyPart == "Leg")
+
+        switch (bodyPart)
         {
-            animator.SetTrigger("LegHit");
+            case "Head":
+                triggerName += weight + "Hit";
+                break;
+            case "Torso":
+                triggerName += weight + "Hit";
+                break;
+            case "Arm":
+                triggerName += weight + "Hit";
+                break;
+            case "Leg":
+                triggerName += weight + "Hit";
+                break;
+            default:
+                triggerName += "NormalHit";
+                break;
         }
+
+        animator.SetTrigger(triggerName);
     }
 
 }

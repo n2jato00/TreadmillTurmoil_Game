@@ -51,7 +51,7 @@ public class BodyPartHitReaction : MonoBehaviour
         }
     }
 
-    private void HandleBodyPartHit(string bodyPart)
+    private void HandleBodyPartHit(string bodyPart, Rigidbody rb)
     {
         isHit = true;
         hitReactionEndTime = Time.time + hitReactionDuration;
