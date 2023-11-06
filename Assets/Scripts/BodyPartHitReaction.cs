@@ -54,7 +54,7 @@ public class BodyPartHitReaction : MonoBehaviour
             else
             {
                 isOutsideLimits = false;
-
+                timeOutsideLimits = 0f;
                 // Move the character forward along the Z-axis.
                 transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
             }
