@@ -33,29 +33,32 @@ public class PlayerScoreManager : MonoBehaviour
         UpdateMultiplierText();
     }
 
-    void UpdateScore(string bodyPart, Rigidbody rb)
+    void UpdateScore(string bodyPart, Rigidbody itemRigidbody)
     {
         int zMultiplier = CalculateZMultiplier();
 
+        int itemWeight = Mathf.RoundToInt(itemRigidbody.mass); // Otetaan huomioon esineen paino.
+
         if (bodyPart == "Head")
         {
-            score += 10 * zMultiplier;
+            score += 10 * zMultiplier * itemWeight;
         }
         else if (bodyPart == "Torso")
         {
-            score += 5 * zMultiplier;
+            score += 5 * zMultiplier * itemWeight;
         }
         else if (bodyPart == "Arm")
         {
-            score += 3 * zMultiplier;
+            score += 3 * zMultiplier * itemWeight;
         }
         else if (bodyPart == "Leg")
         {
-            score += 2 * zMultiplier;
+            score += 2 * zMultiplier * itemWeight;
         }
 
         UpdateUIText();
     }
+
 
     int CalculateZMultiplier()
     {
