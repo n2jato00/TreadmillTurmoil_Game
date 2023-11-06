@@ -13,7 +13,6 @@ public class GameOver : MonoBehaviour
     {
         gameOverPanel.SetActive(false);
         Time.timeScale = 1;
-        // Lis‰‰ kuuntelijat nappuloille.
 
     }
 
