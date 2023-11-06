@@ -3,10 +3,10 @@ using UnityEngine;
 public class BodyPartHitReaction : MonoBehaviour
 {
     [Tooltip("Movement speed when the character is not hit.")]
-    public float forwardSpeed = 1f;
+    public float forwardSpeed = 0.2f;
 
     [Tooltip("How fast the character moves backward after being hit.")]
-    public float hitReactionSpeed = 2f;
+    public float hitReactionSpeed = 2.5f;
 
     [Tooltip("How long the character moves backward after being hit.")]
     public float hitReactionDuration = 0.5f;
@@ -17,6 +17,9 @@ public class BodyPartHitReaction : MonoBehaviour
     [Tooltip("Maximum Z-axis value for the character (back).")]
     public float maxZValue = -0.5f; // Aseta maksimiarvo taaksepäin
 
+    private float timeSinceLastSpeedIncrease = 0f;
+    private float speedIncreaseInterval = 1f; // Aika sekunteina, jonka välein nopeus kasvaa.
+    private float speedIncreaseAmount = 0.01f; // Kuinka paljon nopeutta lisätään.
     public float timeBeforeGameEnds = 5f;
     private float hitReactionEndTime;
     private bool isHit = false;
@@ -55,6 +58,15 @@ public class BodyPartHitReaction : MonoBehaviour
             {
                 isOutsideLimits = false;
                 timeOutsideLimits = 0f;
+
+                // Kasvata nopeutta joka 10 sekunti.
+                timeSinceLastSpeedIncrease += Time.deltaTime;
+                if (timeSinceLastSpeedIncrease >= speedIncreaseInterval)
+                {
+                    forwardSpeed += speedIncreaseAmount;
+                    timeSinceLastSpeedIncrease = 0f;
+                }
+
                 // Move the character forward along the Z-axis.
                 transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
             }
