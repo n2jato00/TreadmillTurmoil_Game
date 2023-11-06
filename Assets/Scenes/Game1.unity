@@ -1888,7 +1888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 0.2
-  hitReactionSpeed: 1
+  hitReactionSpeed: 2.5
   hitReactionDuration: 0.5
   minZValue: -3
   maxZValue: -0.5
