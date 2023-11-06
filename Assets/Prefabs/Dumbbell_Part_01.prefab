@@ -147,6 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21c2d21f8d62ff43b682a953e5af620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxThrowForce: 60
+  maxThrowForce: 50
   minSwipeThreshold: 10
   followSpeed: 5
