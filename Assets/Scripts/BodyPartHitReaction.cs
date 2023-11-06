@@ -11,11 +11,19 @@ public class BodyPartHitReaction : MonoBehaviour
     [Tooltip("How long the character moves backward after being hit.")]
     public float hitReactionDuration = 0.5f;
 
-    [Tooltip("Maximum Z-axis value for the character.")]
-    public float maxZValue = 10f;
+    [Tooltip("Minimum Z-axis value for the character (front).")]
+    public float minZValue = -3f; // Aseta minimiarvo eteenpäin
 
+    [Tooltip("Maximum Z-axis value for the character (back).")]
+    public float maxZValue = -0.5f; // Aseta maksimiarvo taaksepäin
+
+    public float timeBeforeGameEnds = 5f;
     private float hitReactionEndTime;
     private bool isHit = false;
+    public GameOver gameOver;
+
+    private bool isOutsideLimits = false;
+    private float timeOutsideLimits = 0f;
 
     private void OnEnable()
     {
@@ -38,15 +46,32 @@ public class BodyPartHitReaction : MonoBehaviour
         {
             isHit = false;
 
-            // If the character is near or beyond the maximum Z-value, set its position to the maximum.
-            if (transform.position.z <= maxZValue)
+            if (transform.position.z <= minZValue)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y, maxZValue);
+                transform.position = new Vector3(transform.position.x, transform.position.y, minZValue);
+                isOutsideLimits = true;
             }
             else
             {
+                isOutsideLimits = false;
+
                 // Move the character forward along the Z-axis.
                 transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
+            }
+
+            // Check if the character has been beyond minZValue for 5 seconds and call EndGame().
+            if (isOutsideLimits)
+            {
+                timeOutsideLimits += Time.deltaTime;
+                if (timeOutsideLimits >= timeBeforeGameEnds)
+                {
+                    gameOver.EndGame();
+                }
+            }
+
+            if (transform.position.z > maxZValue)
+            {
+                gameOver.EndGame();
             }
         }
     }
