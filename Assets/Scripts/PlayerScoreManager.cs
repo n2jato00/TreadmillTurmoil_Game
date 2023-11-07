@@ -68,7 +68,7 @@ public class PlayerScoreManager : MonoBehaviour
 
     void UpdateUIText()
     {
-        scoreText.text = "Score: " + score;
+         scoreText.text = score.ToString();
     }
 
     void UpdateMultiplierText()
