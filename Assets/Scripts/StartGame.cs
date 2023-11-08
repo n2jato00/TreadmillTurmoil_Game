@@ -12,6 +12,10 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("StartScreen");
     }
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
     public void QuitGame()
     {
         Application.Quit();

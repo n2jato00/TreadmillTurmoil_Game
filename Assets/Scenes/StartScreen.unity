@@ -1367,7 +1367,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 487614279}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: LoadGameScene
+        m_MethodName: LoadTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
