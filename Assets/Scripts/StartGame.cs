@@ -14,7 +14,15 @@ public class StartGame : MonoBehaviour
     }
     public void LoadTutorial()
     {
-        SceneManager.LoadScene("Tutorial");
+        if (PlayerPrefs.GetInt("TutorialComplete") == 0)
+        {
+            SceneManager.LoadScene("Tutorial");
+        }
+        else
+        {
+            PauseManager.canThrow = true;
+            SceneManager.LoadScene("Game1"); // Siirry suoraan peliin, koska tutorial on suoritettu
+        }
     }
     public void QuitGame()
     {
