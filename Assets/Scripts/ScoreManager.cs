@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerScoreManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
     public Text scoreText;
     public Text multiplierText; // Reference to the UI Text component for the multiplier.
