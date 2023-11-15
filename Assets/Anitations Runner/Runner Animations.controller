@@ -227,7 +227,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -964723652994646336}
-    m_Position: {x: 400, y: -90, z: 0}
+    m_Position: {x: 400, y: -100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7849738003845718726}
     m_Position: {x: 400, y: -40, z: 0}
@@ -411,7 +411,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4886961278328100035}
-    m_Position: {x: 930, y: -10, z: 0}
+    m_Position: {x: 1100, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2445395407191410343}
     m_Position: {x: 930, y: 160, z: 0}
@@ -420,13 +420,13 @@ AnimatorStateMachine:
     m_Position: {x: 400, y: -80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7600063594586085454}
-    m_Position: {x: 400, y: 150, z: 0}
+    m_Position: {x: 400, y: 270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3918319588196852323}
     m_Position: {x: 400, y: 320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 621102602741510046}
-    m_Position: {x: 400, y: 240, z: 0}
+    m_Position: {x: 400, y: -20, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -525636407763510822}
@@ -440,7 +440,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 950, y: -80, z: 0}
   m_ExitPosition: {x: 950, y: 220, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -4886961278328100035}
+  m_DefaultState: {fileID: 2445395407191410343}
 --- !u!1102 &-3918319588196852323
 AnimatorState:
   serializedVersion: 6
@@ -672,6 +672,12 @@ AnimatorController:
   m_Name: Runner Animations
   serializedVersion: 5
   m_AnimatorParameters:
+  - m_Name: Idle -> Run
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: Run -> Sprint
     m_Type: 9
     m_DefaultFloat: 0
@@ -818,7 +824,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Idle -> Run
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2445395407191410343}
   m_Solo: 0

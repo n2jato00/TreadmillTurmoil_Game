@@ -31,7 +31,7 @@ public class ThrowItem : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
-        maxSwipeDistance = Screen.height * 0.65f;
+        maxSwipeDistance = Screen.height * 0.45f;
     }
 
     private void Update()
