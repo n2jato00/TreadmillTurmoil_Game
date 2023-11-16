@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour
     public Text scoreText;
     public Text multiplierText; // Reference to the UI Text component for the multiplier.
     public Transform playerTransform;
+    public HighscoreManager highscoreManager;
 
     public float zMultiplierStart = 0;
     public float zMultiplierEnd = 10;
@@ -57,6 +58,7 @@ public class ScoreManager : MonoBehaviour
         }
 
         UpdateUIText();
+        highscoreManager.UpdateHighscore(score);
     }
 
 
