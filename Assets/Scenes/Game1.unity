@@ -163,23 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &3422348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3422340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 622323117}
+  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -388,23 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &142895053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142895045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 622323117}
+  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -498,23 +466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &245833230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245833222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 622323117}
+  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -584,23 +536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &295443445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295443437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 622323117}
+  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -644,23 +580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &296944940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296944932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 1875637545}
+  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -1186,23 +1106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &519965834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519965826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 622323117}
+  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -1593,23 +1497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &731490281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731490273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 1875637545}
+  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -1653,23 +1541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &793946187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793946179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 1875637545}
+  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -3151,90 +3023,60 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2686890238580948208, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 295443443}
-    - targetCorrespondingSourceObject: {fileID: 2686890238580948208, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 295443445}
     - targetCorrespondingSourceObject: {fileID: 2686890238580948174, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 519965828}
     - targetCorrespondingSourceObject: {fileID: 2686890238580948174, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 519965832}
-    - targetCorrespondingSourceObject: {fileID: 2686890238580948174, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 519965834}
     - targetCorrespondingSourceObject: {fileID: 4178697044410892, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 245833224}
     - targetCorrespondingSourceObject: {fileID: 4178697044410892, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 245833228}
-    - targetCorrespondingSourceObject: {fileID: 4178697044410892, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 245833230}
     - targetCorrespondingSourceObject: {fileID: 9136484019932330436, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063482468}
     - targetCorrespondingSourceObject: {fileID: 9136484019932330436, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063482472}
-    - targetCorrespondingSourceObject: {fileID: 9136484019932330436, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2063482474}
     - targetCorrespondingSourceObject: {fileID: 8965032090389925506, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 142895047}
     - targetCorrespondingSourceObject: {fileID: 8965032090389925506, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 142895051}
-    - targetCorrespondingSourceObject: {fileID: 8965032090389925506, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 142895053}
     - targetCorrespondingSourceObject: {fileID: 2930317830956865148, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3422342}
     - targetCorrespondingSourceObject: {fileID: 2930317830956865148, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3422346}
-    - targetCorrespondingSourceObject: {fileID: 2930317830956865148, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3422348}
     - targetCorrespondingSourceObject: {fileID: 995476546536766501, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 731490275}
     - targetCorrespondingSourceObject: {fileID: 995476546536766501, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 731490279}
-    - targetCorrespondingSourceObject: {fileID: 995476546536766501, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 731490281}
     - targetCorrespondingSourceObject: {fileID: 8279105925769713829, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 296944934}
     - targetCorrespondingSourceObject: {fileID: 8279105925769713829, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 296944938}
-    - targetCorrespondingSourceObject: {fileID: 8279105925769713829, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 296944940}
     - targetCorrespondingSourceObject: {fileID: 7083029244721559298, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 793946181}
     - targetCorrespondingSourceObject: {fileID: 7083029244721559298, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 793946185}
-    - targetCorrespondingSourceObject: {fileID: 7083029244721559298, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 793946187}
     - targetCorrespondingSourceObject: {fileID: 5985946012379002448, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1341076501}
     - targetCorrespondingSourceObject: {fileID: 5985946012379002448, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1341076505}
-    - targetCorrespondingSourceObject: {fileID: 5985946012379002448, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1341076507}
   m_SourcePrefab: {fileID: 100100000, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
 --- !u!1 &1341076499 stripped
 GameObject:
@@ -3276,23 +3118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &1341076507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341076499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 1875637545}
+  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -4559,23 +4385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.8
   hitSound: {fileID: 982231487}
-  acceptedLayer:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!114 &2063482474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063482466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 0.8
-  hitSound: {fileID: 622323117}
+  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
