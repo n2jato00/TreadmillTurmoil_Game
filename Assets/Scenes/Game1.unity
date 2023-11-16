@@ -4434,6 +4434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492ace203388e714687e4c594b5bd099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 308859920}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
