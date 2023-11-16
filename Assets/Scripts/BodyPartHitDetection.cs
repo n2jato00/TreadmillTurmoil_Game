@@ -3,13 +3,16 @@ using UnityEngine;
 public class BodyPartHitDetection : MonoBehaviour
 {
     public delegate void BodyPartHit(string bodyPart, Rigidbody rb);
-
     public static event BodyPartHit OnBodyPartHit;
 
     public float cooldownTime = 0.2f; // Aika sekunneissa ennen kuin uusi osuma voidaan ottaa vastaan.
     private bool canHit = true;
 
     public AudioSource hitSound; // Reference to the AudioSource for the hit sound
+    public AudioSource screamSound;
+
+    // Layer, joka halutaan hyväksyä törmäyksessä
+    public LayerMask acceptedLayer;
 
     private void Start()
     {
@@ -24,14 +27,19 @@ public class BodyPartHitDetection : MonoBehaviour
     {
         if (canHit && OnBodyPartHit != null)
         {
-            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
-            if (rb != null)
+            // Tarkista, onko törmäävän peliobjektin kerros haluttu
+            if ((acceptedLayer.value & 1 << collision.gameObject.layer) != 0)
             {
-                OnBodyPartHit(gameObject.tag, rb);
-                PlayHitSound(); // Play the hit sound
+                Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    OnBodyPartHit(gameObject.tag, rb);
+                    PlayHitSound(); // Play the hit sound
+                    PlayScreamSound();
+                }
+                canHit = false;
+                Invoke("ResetHit", cooldownTime);
             }
-            canHit = false;
-            Invoke("ResetHit", cooldownTime);
         }
     }
 
@@ -40,6 +48,13 @@ public class BodyPartHitDetection : MonoBehaviour
         if (hitSound != null)
         {
             hitSound.Play();
+        }
+    }
+    void PlayScreamSound()
+    { 
+        if (screamSound != null)
+        {
+            screamSound.Play();
         }
     }
 

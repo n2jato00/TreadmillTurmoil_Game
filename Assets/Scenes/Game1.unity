@@ -161,8 +161,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &3422348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,8 +178,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 622323117}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &44166832
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +323,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -324,6 +334,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
       propertyPath: m_Name
       value: tredmill8.11.2023
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -372,8 +386,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &142895053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,8 +403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 622323117}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &212681941
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,8 +496,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &245833230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,8 +513,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 622323117}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &291430905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
@@ -556,8 +582,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &295443445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,8 +599,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 622323117}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &296944932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8279105925769713829, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
@@ -610,8 +642,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &296944940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,8 +659,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 1875637545}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &308859916
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +917,7 @@ GameObject:
   - component: {fileID: 458342421}
   - component: {fileID: 458342420}
   - component: {fileID: 458342424}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,8 +1184,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &519965834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,8 +1201,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 622323117}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &606807285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,8 +1591,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &731490281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,8 +1608,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 1875637545}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &793946179 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7083029244721559298, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
@@ -1601,8 +1651,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &793946187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1615,8 +1668,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 1875637545}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &816716132
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,8 +3274,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &1341076507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3232,8 +3291,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 1875637545}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &1466682169
 GameObject:
   m_ObjectHideFlags: 0
@@ -4495,8 +4557,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &2063482474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4509,8 +4574,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.2
+  cooldownTime: 0.8
   hitSound: {fileID: 622323117}
+  acceptedLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &2091862279
 GameObject:
   m_ObjectHideFlags: 0
