@@ -323,13 +323,16 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4f35b9d8837f18647996483936ecfec3, type: 2}
     - target: {fileID: 919132149155446097, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
       propertyPath: m_Name
-      value: tredmill8.11.2023_uusin
+      value: tredmill8.11.2023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 291430907}
   m_SourcePrefab: {fileID: 100100000, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
 --- !u!1 &142895045 stripped
 GameObject:
@@ -489,6 +492,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0.2
   hitSound: {fileID: 622323117}
+--- !u!1 &291430905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ab4670a2b537d8489f9b093dfeef4c0, type: 3}
+  m_PrefabInstance: {fileID: 47977664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &291430907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291430905}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.31, y: 0.37, z: 2.55}
+  m_Center: {x: -1.07, y: 0.42, z: -0.64}
 --- !u!1 &295443437 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2686890238580948208, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
@@ -849,6 +878,7 @@ GameObject:
   - component: {fileID: 458342422}
   - component: {fileID: 458342421}
   - component: {fileID: 458342420}
+  - component: {fileID: 458342424}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -943,6 +973,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &458342424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458342419}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 0.001, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &494480044
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,7 +4436,9 @@ MonoBehaviour:
   - {fileID: 2709907994572542152, guid: 3b6ec8831da48b14691bd4b3011f186a, type: 3}
   - {fileID: 3890163951496518975, guid: fd3ccda8dc8dc7a4ba257fa3d3b93db6, type: 3}
   - {fileID: 6823718924188021695, guid: daa01cb8859d5344dbedf46564e25f5a, type: 3}
+  - {fileID: 3796696533201854826, guid: f141bc6a3f1610b4e8818787070ae75a, type: 3}
   itemLifetime: 2
+  createNewItemTime: 2
   distanceInFrontOfCamera: 1.6
   heightAboveCamera: -0.41
   lateralOffsetFromCamera: 0.1

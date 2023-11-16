@@ -4,6 +4,7 @@ public class ItemRespawn : MonoBehaviour
 {
     public GameObject[] itemPrefabs; // Set this array in the Unity Editor.
     public float itemLifetime = 5f;
+    public float createNewItemTime = 1f;
     public float distanceInFrontOfCamera = 1.6f; // Kuinka kaukana kameran edessä esine ilmestyy.
     public float heightAboveCamera = 0f; // Kuinka korkealla kameran yläpuolella esine ilmestyy.
     public float lateralOffsetFromCamera = 0.1f; // Kuinka kaukana sivusuunnassa kamerasta esine ilmestyy.
@@ -16,7 +17,7 @@ public class ItemRespawn : MonoBehaviour
         mainCamera = Camera.main;
 
         ThrowItem.OnBallThrown += HandleThrowEvent;
-        BodyPartHitDetection.OnBodyPartHit += HandleHitEvent;
+       
 
         // Create the initial item
         CreateNewItem();
@@ -27,19 +28,10 @@ public class ItemRespawn : MonoBehaviour
         if (currentItem != null)
         {
             Destroy(currentItem, itemLifetime);
-            Invoke("CreateNewItem", itemLifetime);
+            Invoke("CreateNewItem", createNewItemTime);
         }
     }
 
-    private void HandleHitEvent(string bodyPart, Rigidbody rb)
-    {
-        if (currentItem != null)
-        {
-            CancelInvoke("CreateNewItem");
-            Destroy(currentItem);
-        }
-        CreateNewItem();
-    }
 
     private void CreateNewItem()
     {
@@ -58,6 +50,5 @@ public class ItemRespawn : MonoBehaviour
     private void OnDestroy()
     {
         ThrowItem.OnBallThrown -= HandleThrowEvent;
-        BodyPartHitDetection.OnBodyPartHit -= HandleHitEvent;
     }
 }
