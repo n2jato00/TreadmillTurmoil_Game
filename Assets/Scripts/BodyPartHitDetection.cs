@@ -5,13 +5,13 @@ public class BodyPartHitDetection : MonoBehaviour
     public delegate void BodyPartHit(string bodyPart, Rigidbody rb);
     public static event BodyPartHit OnBodyPartHit;
 
-    public float cooldownTime = 0.2f; // Aika sekunneissa ennen kuin uusi osuma voidaan ottaa vastaan.
+    public float cooldownTime = 0.8f; // Time in seconds before a new hit can be accepted
     private bool canHit = true;
 
     public AudioSource hitSound; // Reference to the AudioSource for the hit sound
     public AudioSource screamSound;
 
-    // Layer, joka halutaan hyväksyä törmäyksessä
+    // Layer that is intended to be accepted in collisions.
     public LayerMask acceptedLayer;
 
     private void Start()
@@ -27,7 +27,7 @@ public class BodyPartHitDetection : MonoBehaviour
     {
         if (canHit && OnBodyPartHit != null)
         {
-            // Tarkista, onko törmäävän peliobjektin kerros haluttu
+            // Check if the colliding game object's layer is the desired one
             if ((acceptedLayer.value & 1 << collision.gameObject.layer) != 0)
             {
                 Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
@@ -58,7 +58,7 @@ public class BodyPartHitDetection : MonoBehaviour
         }
     }
 
-    // Metodi, joka sallii osumien vastaanoton.
+    // The method that allows the reception of hits
     void ResetHit()
     {
         canHit = true;

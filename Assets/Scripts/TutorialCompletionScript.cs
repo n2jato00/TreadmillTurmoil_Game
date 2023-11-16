@@ -10,7 +10,7 @@ public class TutorialCompletionScript : MonoBehaviour
 
     private void Start()
     {
-        // Tarkista, onko tutorial jo suoritettu
+        // Check if the tutorial is completed
         tutorialCompleted = PlayerPrefs.GetInt("TutorialComplete") == 1;
     }
 

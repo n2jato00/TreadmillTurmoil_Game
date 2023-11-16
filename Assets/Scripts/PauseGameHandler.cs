@@ -7,7 +7,7 @@ public class PauseGameHandler : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
-        PauseManager.canThrow = false; // Estä heittäminen tauon aikana
+        PauseManager.canThrow = false; // Stop throws when Pause is activated
     }
     public void ResumeGame()
     {

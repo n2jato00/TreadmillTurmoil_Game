@@ -15,7 +15,7 @@ public class ThrowItem : MonoBehaviour
     private Vector2 startSwipePos;
     private Vector2 endSwipePos;
     private bool isDragging = false;
-    private bool isThrown = false; // Lis‰‰ muuttuja isThrown
+    private bool isThrown = false;
 
     public static event Action OnBallThrown;
 
@@ -40,7 +40,7 @@ public class ThrowItem : MonoBehaviour
 
     private void HandleInput()
     {
-        if (isThrown) // Lis‰‰ tarkistus, jos esine on heitetty
+        if (isThrown)
             return;
 
         if (Time.timeScale == 0 || !PauseManager.canThrow)
@@ -71,7 +71,7 @@ public class ThrowItem : MonoBehaviour
                     rb.useGravity = true;
                     ThrowBall();
                     PauseManager.canThrow = false;
-                    isThrown = true; // Merkitse, ett‰ esine on heitetty
+                    isThrown = true;
                 }
             }
         }
@@ -79,7 +79,7 @@ public class ThrowItem : MonoBehaviour
 
     private void HandleDrag()
     {
-        if (isThrown) // Lis‰‰ tarkistus, jos esine on heitetty
+        if (isThrown) 
             return;
 
         if (isDragging)

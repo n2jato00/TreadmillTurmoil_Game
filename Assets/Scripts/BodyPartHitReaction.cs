@@ -12,14 +12,14 @@ public class BodyPartHitReaction : MonoBehaviour
     public float hitReactionDuration = 0.5f;
 
     [Tooltip("Minimum Z-axis value for the character (front).")]
-    public float minZValue = -3f; // Aseta minimiarvo eteenpäin
+    public float minZValue = -3f; // Min value on front
 
     [Tooltip("Maximum Z-axis value for the character (back).")]
-    public float maxZValue = -0.5f; // Aseta maksimiarvo taaksepäin
+    public float maxZValue = -0.5f; // Max value on back
 
     private float timeSinceLastSpeedIncrease = 0f;
-    private float speedIncreaseInterval = 1f; // Aika sekunteina, jonka välein nopeus kasvaa.
-    private float speedIncreaseAmount = 0.01f; // Kuinka paljon nopeutta lisätään.
+    private float speedIncreaseInterval = 1f; // How often speed increase in seconds
+    private float speedIncreaseAmount = 0.01f; // How much speed increase
     public float timeBeforeGameEnds = 5f;
     private float hitReactionEndTime;
     private bool isHit = false;
@@ -59,7 +59,7 @@ public class BodyPartHitReaction : MonoBehaviour
                 isOutsideLimits = false;
                 timeOutsideLimits = 0f;
 
-                // Kasvata nopeutta joka 10 sekunti.
+                // increase speed after speedIncreaseInterval
                 timeSinceLastSpeedIncrease += Time.deltaTime;
                 if (timeSinceLastSpeedIncrease >= speedIncreaseInterval)
                 {

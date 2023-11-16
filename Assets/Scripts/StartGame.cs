@@ -21,7 +21,7 @@ public class StartGame : MonoBehaviour
         else
         {
             PauseManager.canThrow = true;
-            SceneManager.LoadScene("Game1"); // Siirry suoraan peliin, koska tutorial on suoritettu
+            SceneManager.LoadScene("Game1"); // Move the game, if tutorial is completed
         }
     }
     public void QuitGame()

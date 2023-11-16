@@ -37,7 +37,7 @@ public class ScoreManager : MonoBehaviour
     {
         int zMultiplier = CalculateZMultiplier();
 
-        int itemWeight = Mathf.RoundToInt(itemRigidbody.mass); // Otetaan huomioon esineen paino.
+        int itemWeight = Mathf.RoundToInt(itemRigidbody.mass); // Item mass
 
         if (bodyPart == "Head")
         {
