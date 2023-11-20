@@ -10,6 +10,7 @@ TagManager:
   - Arm
   - Leg
   - RagdollPart
+  - Banana
   layers:
   - Default
   - TransparentFX

@@ -4489,6 +4489,7 @@ MonoBehaviour:
   - {fileID: 3890163951496518975, guid: fd3ccda8dc8dc7a4ba257fa3d3b93db6, type: 3}
   - {fileID: 6823718924188021695, guid: daa01cb8859d5344dbedf46564e25f5a, type: 3}
   - {fileID: 3796696533201854826, guid: f141bc6a3f1610b4e8818787070ae75a, type: 3}
+  - {fileID: 6125450168309434448, guid: 570edaa1697eb0947bfd61242b8cabea, type: 3}
   itemLifetime: 2
   createNewItemTime: 2
   distanceInFrontOfCamera: 1.6
