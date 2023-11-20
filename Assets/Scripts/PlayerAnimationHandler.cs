@@ -39,26 +39,48 @@ public class PlayerAnimationHandler : MonoBehaviour
             weight = "Heavy";
         }
 
-        switch (bodyPart)
+        // Check if the tag is "banana"
+        if (GameObject.FindWithTag("Banana") == true)
         {
-            case "Head":
-                triggerName += weight + "Hit";
-                break;
-            case "Torso":
-                triggerName += weight + "Hit";
-                break;
-            case "Arm":
-                triggerName += weight + "Hit";
-                break;
-            case "Leg":
-                triggerName += weight + "Hit";
-                break;
-            default:
-                triggerName += "NormalHit";
-                break;
+            // Modify triggerName for "Head" and "Leg" when tag is "banaani"
+            switch (bodyPart)
+            {
+                case "Head":
+                    triggerName = "SlipBanan";
+                    break;
+                case "Leg":
+                    triggerName = "SlipBanan";
+                    break;
+                default:
+                    triggerName += weight + "Hit";
+                    break;
+            }
+        }
+        else
+        {
+            // Default behavior for other tags
+            switch (bodyPart)
+            {
+                case "Head":
+                    triggerName += weight + "Hit";
+                    break;
+                case "Torso":
+                    triggerName += weight + "Hit";
+                    break;
+                case "Arm":
+                    triggerName += weight + "Hit";
+                    break;
+                case "Leg":
+                    triggerName += weight + "Hit";
+                    break;
+                default:
+                    triggerName += "NormalHit";
+                    break;
+            }
         }
 
         animator.SetTrigger(triggerName);
     }
+
 
 }
