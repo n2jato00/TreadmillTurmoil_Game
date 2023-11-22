@@ -50,7 +50,7 @@ public class PlayerAnimationHandler : MonoBehaviour
                 case "Head":
                     triggerName = "HeadLightHit";
                     animator.SetBool("Sprint", true);
-                    StartCoroutine(ResetSprintAfterDelay(1.0f));
+                    StartCoroutine(ResetSprintAfterDelay(0.8f));
                     break;
                 case "Leg":
                     triggerName = "SlipBanan";
