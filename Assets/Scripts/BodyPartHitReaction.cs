@@ -6,16 +6,18 @@ public class BodyPartHitReaction : MonoBehaviour
     public float forwardSpeed = 0.2f;
 
     [Tooltip("How fast the character moves backward after being hit.")]
-    public float hitReactionSpeed = 2.5f;
+    public float hitReactionSpeed = 2.3f;
 
     [Tooltip("How long the character moves backward after being hit.")]
     public float hitReactionDuration = 0.5f;
 
     [Tooltip("Minimum Z-axis value for the character (front).")]
-    public float minZValue = -3f; // Min value on front
+    private float minZValue = -2.9f; // Min value on front
 
     [Tooltip("Maximum Z-axis value for the character (back).")]
-    public float maxZValue = -0.5f; // Max value on back
+    private float maxZValue = -0.9f; // Max value on back
+
+    private float xValue = 0.46f;
 
     private float timeSinceLastSpeedIncrease = 0f;
     private float speedIncreaseInterval = 1f; // How often speed increase in seconds
@@ -24,7 +26,6 @@ public class BodyPartHitReaction : MonoBehaviour
     private float hitReactionEndTime;
     private bool isHit = false;
     public GameOver gameOver;
-
     private bool isOutsideLimits = false;
     private float timeOutsideLimits = 0f;
 
@@ -40,6 +41,7 @@ public class BodyPartHitReaction : MonoBehaviour
 
     private void Update()
     {
+ 
         if (isHit && Time.time < hitReactionEndTime)
         {
             // Move the character backward along the Z-axis.
@@ -51,11 +53,13 @@ public class BodyPartHitReaction : MonoBehaviour
 
             if (transform.position.z <= minZValue)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y, minZValue);
+                hitReactionSpeed = 0f;
+                transform.position = new Vector3(xValue, transform.position.y, minZValue);
                 isOutsideLimits = true;
             }
             else
             {
+               
                 isOutsideLimits = false;
                 timeOutsideLimits = 0f;
 
@@ -88,9 +92,26 @@ public class BodyPartHitReaction : MonoBehaviour
         }
     }
 
-    private void HandleBodyPartHit(string bodyPart, Rigidbody rb)
+    public void HandleBodyPartHit(string bodyPart, Rigidbody rb)
     {
         isHit = true;
         hitReactionEndTime = Time.time + hitReactionDuration;
+
+       
+        if (bodyPart == "Head" && rb.gameObject.tag != "Test")
+        {
+         
+            hitReactionSpeed = -1.5f;
+        }
+        else if (bodyPart != "Leg" && rb.gameObject.tag != "Test")
+        {
+            hitReactionSpeed = 0f;
+        }
+        else
+        {
+
+            hitReactionSpeed = 2.3f;
+        }
     }
+
 }

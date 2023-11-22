@@ -2381,8 +2381,6 @@ MonoBehaviour:
   forwardSpeed: 0.2
   hitReactionSpeed: 2.3
   hitReactionDuration: 0.5
-  minZValue: -2.9
-  maxZValue: -1
   timeBeforeGameEnds: 5
   gameOver: {fileID: 606807288}
 --- !u!114 &1139885227
@@ -3029,7 +3027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2686890238580842728, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.09
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 2686890238580842728, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
       propertyPath: m_LocalPosition.y

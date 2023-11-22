@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAnimationHandler : MonoBehaviour
@@ -26,7 +28,7 @@ public class PlayerAnimationHandler : MonoBehaviour
         float objectMass = rb.mass;
         string weight;
 
-        if (objectMass < 5.0f)
+        if (objectMass < 9.1f)
         {
             weight = "Light";
         }
@@ -40,19 +42,21 @@ public class PlayerAnimationHandler : MonoBehaviour
         }
 
         // Check if the tag is "banana"
-        if (GameObject.FindWithTag("Banana") == true)
+        if (rb.gameObject.tag == "Banana")
         {
             // Modify triggerName for "Head" and "Leg" when tag is "banaani"
             switch (bodyPart)
             {
                 case "Head":
-                    triggerName = "SlipBanan";
+                    triggerName = "HeadLightHit";
+                    animator.SetBool("Sprint", true);
+                    StartCoroutine(ResetSprintAfterDelay(1.0f));
                     break;
                 case "Leg":
                     triggerName = "SlipBanan";
                     break;
                 default:
-                    triggerName += weight + "Hit";
+                    triggerName = "TorsoLightHit";
                     break;
             }
         }
@@ -81,6 +85,13 @@ public class PlayerAnimationHandler : MonoBehaviour
 
         animator.SetTrigger(triggerName);
     }
+    private IEnumerator ResetSprintAfterDelay(float delay)
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
 
+        // Set the "Sprint" parameter to false after the delay
+        animator.SetBool("Sprint", false);
+    }
 
 }
