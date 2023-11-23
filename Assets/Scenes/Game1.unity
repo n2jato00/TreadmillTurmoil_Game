@@ -1996,8 +1996,8 @@ RectTransform:
   - {fileID: 1147963333}
   - {fileID: 1520333848}
   - {fileID: 1888740375}
-  - {fileID: 661141187}
   - {fileID: 2000781106}
+  - {fileID: 661141187}
   m_Father: {fileID: 1320738447}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
@@ -2643,6 +2643,7 @@ GameObject:
   - component: {fileID: 1147963336}
   - component: {fileID: 1147963335}
   - component: {fileID: 1147963334}
+  - component: {fileID: 1147963337}
   m_Layer: 5
   m_Name: OptionButton
   m_TagString: Untagged
@@ -2713,7 +2714,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1147963335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1147963337}
+        m_TargetAssemblyTypeName: SceneOption, Assembly-CSharp
+        m_MethodName: ChangeSceneAndActivatePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1147963335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2752,6 +2765,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147963332}
   m_CullTransparentMesh: 1
+--- !u!114 &1147963337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147963332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbcb4032a8a27654db16af3cce9d92d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1203068709
 GameObject:
   m_ObjectHideFlags: 0
