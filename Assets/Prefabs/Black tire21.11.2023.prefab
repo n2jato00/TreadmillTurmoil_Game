@@ -49,6 +49,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e2fc9ce57bd89aa43829a5ad3edcdf09, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e2fc9ce57bd89aa43829a5ad3edcdf09, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7bd15d8f1b9f222459e332624ea4fb91, type: 2}
@@ -70,6 +74,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e2fc9ce57bd89aa43829a5ad3edcdf09, type: 3}
       insertIndex: -1
       addedObject: {fileID: -7689830810256880252}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e2fc9ce57bd89aa43829a5ad3edcdf09, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7048427084070205551}
   m_SourcePrefab: {fileID: 100100000, guid: e2fc9ce57bd89aa43829a5ad3edcdf09, type: 3}
 --- !u!1 &8647894903476890370 stripped
 GameObject:
@@ -102,7 +109,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &-7689830810256880252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,3 +125,25 @@ MonoBehaviour:
   maxThrowForce: 49
   minSwipeThreshold: 5
   followSpeed: 5
+--- !u!64 &7048427084070205551
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8647894903476890370}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: e2fc9ce57bd89aa43829a5ad3edcdf09, type: 3}

@@ -6299,7 +6299,6 @@ MonoBehaviour:
   - {fileID: 2709907994572542152, guid: 3b6ec8831da48b14691bd4b3011f186a, type: 3}
   - {fileID: 3957823258674285124, guid: 00c37f21d2f779341972e59e2329f375, type: 3}
   - {fileID: 6823718924188021695, guid: daa01cb8859d5344dbedf46564e25f5a, type: 3}
-  - {fileID: 3796696533201854826, guid: f141bc6a3f1610b4e8818787070ae75a, type: 3}
   - {fileID: 6125450168309434448, guid: 570edaa1697eb0947bfd61242b8cabea, type: 3}
   - {fileID: 8647894903476890370, guid: f93639480776519468a16b8b311b80be, type: 3}
   - {fileID: 8267621741645558468, guid: f4977ca254c155d4b835f1a554d1b435, type: 3}
@@ -6310,7 +6309,7 @@ MonoBehaviour:
   - {fileID: 2432199644256933194, guid: 153d95d250cba754fa63bcb1852ac564, type: 3}
   - {fileID: 4666306695085193335, guid: d5d912344aa7daa489b85d6aa1081f3b, type: 3}
   - {fileID: 8944106310148983939, guid: 74d85c9bca314ec4db9088840945894c, type: 3}
-  - {fileID: 8316594434409325444, guid: 297aeb6c0c336f8479963f087979b20e, type: 3}
+  - {fileID: 6534703929432661437, guid: 362c53a4f0edeb04e826e908c772e2f3, type: 3}
   itemLifetime: 2
   createNewItemTime: 2
   distanceInFrontOfCamera: 1.6
