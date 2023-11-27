@@ -54,7 +54,7 @@ public class ItemRespawn : MonoBehaviour
                                 Vector3.up * heightAboveCamera +
                                 mainCamera.transform.right * lateralOffsetFromCamera;
 
-        currentItem = Instantiate(randomItemPrefab, spawnPosition, Quaternion.identity);
+        currentItem = Instantiate(randomItemPrefab, spawnPosition, randomItemPrefab.transform.rotation);
         PauseManager.canThrow = true;
     }
 
