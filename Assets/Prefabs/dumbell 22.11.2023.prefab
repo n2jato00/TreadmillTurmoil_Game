@@ -84,7 +84,7 @@ PrefabInstance:
       addedObject: {fileID: -3558887499835791692}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 727174e3daa4d1f4d9e4fa59485b0d74, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7886292402419321882}
+      addedObject: {fileID: 7032525234305833336}
   m_SourcePrefab: {fileID: 100100000, guid: 727174e3daa4d1f4d9e4fa59485b0d74, type: 3}
 --- !u!1 &3957823258674285124 stripped
 GameObject:
@@ -133,8 +133,8 @@ MonoBehaviour:
   maxThrowForce: 49
   minSwipeThreshold: 5
   followSpeed: 5
---- !u!64 &7886292402419321882
-MeshCollider:
+--- !u!136 &7032525234305833336
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -151,7 +151,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2534964839176971238, guid: 727174e3daa4d1f4d9e4fa59485b0d74, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.12
+  m_Height: 0.61
+  m_Direction: 2
+  m_Center: {x: 0, y: -0.0000000037252903, z: -0.0033919371}

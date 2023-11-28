@@ -72,7 +72,7 @@ PrefabInstance:
       addedObject: {fileID: 702933215029694402}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f18e69af2f5b35445a73b2bf6869c0ea, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 54581964734731625}
+      addedObject: {fileID: 2936289397713133729}
   m_SourcePrefab: {fileID: 100100000, guid: f18e69af2f5b35445a73b2bf6869c0ea, type: 3}
 --- !u!1 &6719966324834404883 stripped
 GameObject:
@@ -119,9 +119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxThrowForce: 50
-  minSwipeThreshold: 10
+  minSwipeThreshold: 5
   followSpeed: 5
---- !u!64 &54581964734731625
+--- !u!64 &2936289397713133729
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
