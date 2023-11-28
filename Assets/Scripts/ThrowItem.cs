@@ -16,7 +16,7 @@ public class ThrowItem : MonoBehaviour
     private Vector2 endSwipePos;
     private bool isDragging = false;
     private bool isThrown = false;
-
+    private Vector2 lastTouchPos;
     public static event Action OnBallThrown;
 
     private Rigidbody rb;
@@ -79,25 +79,51 @@ public class ThrowItem : MonoBehaviour
 
     private void HandleDrag()
     {
-        if (isThrown) 
+        if (isThrown)
             return;
 
         if (isDragging)
         {
+            Touch touch = Input.GetTouch(0);
+
             float distanceToCamera = Vector3.Distance(transform.position, Camera.main.transform.position);
-            Vector3 touchPosOnScreen = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, distanceToCamera);
+            Vector3 touchPosOnScreen = new Vector3(touch.position.x, touch.position.y, distanceToCamera);
             Vector3 touchPosInWorld = Camera.main.ScreenToWorldPoint(touchPosOnScreen);
             touchPosInWorld.z = transform.position.z;
 
             if (Vector3.Distance(transform.position, touchPosInWorld) < 0.05f)
             {
+                RotateObject(touch.position);
                 rb.MovePosition(touchPosInWorld);
             }
             else
             {
+                RotateObject(touch.position);
                 rb.MovePosition(Vector3.Lerp(transform.position, touchPosInWorld, Time.deltaTime * followSpeed));
             }
         }
+        else
+        {
+            lastTouchPos = Vector2.zero;
+        }
+    }
+
+    private void RotateObject(Vector2 currentTouchPos)
+    {
+        if (lastTouchPos != Vector2.zero)
+        {
+            // Calculate the circular movement
+            Vector2 deltaPos = currentTouchPos - lastTouchPos;
+            float rotationAmount = Mathf.Atan2(deltaPos.y, deltaPos.x) * Mathf.Rad2Deg;
+
+            // Adjust the rotation speed
+            float rotationSpeed = 0.2f;
+
+            // Use AddTorque to apply torque for rotation
+            rb.AddTorque(Vector3.forward * rotationAmount * rotationSpeed);
+        }
+
+        lastTouchPos = currentTouchPos;
     }
 
     private void ThrowBall()
@@ -114,4 +140,23 @@ public class ThrowItem : MonoBehaviour
         rb.AddForce(forceDirection * throwForce, ForceMode.Impulse);
         OnBallThrown?.Invoke();
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Treadmill"))
+        {
+            // Nollaa nykyinen nopeus ja rotaatio
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+
+            // Halutut voimakomponentit x ja z suuntiin
+            float desiredXForce = -100.0f; // Voima x-suunnassa
+            float desiredZForce = 100.0f;  // Voima z-suunnassa
+
+            // Lisää voima halutuilla komponenteilla
+            rb.AddForce(new Vector3(desiredXForce, 0f, desiredZForce), ForceMode.Impulse);
+        }
+    }
+
+
+
 }
