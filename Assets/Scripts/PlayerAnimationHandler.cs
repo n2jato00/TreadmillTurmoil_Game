@@ -48,7 +48,7 @@ public class PlayerAnimationHandler : MonoBehaviour
             switch (bodyPart)
             {
                 case "Head":
-                    triggerName = "HeadLightHit";
+                    triggerName = "Eating";
                     animator.SetBool("Sprint", true);
                     StartCoroutine(ResetSprintAfterDelay(0.8f));
                     break;
