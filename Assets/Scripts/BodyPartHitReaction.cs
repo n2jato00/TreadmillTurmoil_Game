@@ -102,6 +102,7 @@ public class BodyPartHitReaction : MonoBehaviour
         {
          
             hitReactionSpeed = -1.5f;
+            
         }
         else if (bodyPart != "Leg" && rb.gameObject.tag != "Test")
         {

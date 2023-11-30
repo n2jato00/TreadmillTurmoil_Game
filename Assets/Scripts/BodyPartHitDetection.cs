@@ -5,7 +5,7 @@ public class BodyPartHitDetection : MonoBehaviour
     public delegate void BodyPartHit(string bodyPart, Rigidbody rb);
     public static event BodyPartHit OnBodyPartHit;
 
-    public float cooldownTime = 0.8f; // Time in seconds before a new hit can be accepted
+    public float cooldownTime = 0.3f; // Time in seconds before a new hit can be accepted
     private bool canHit = true;
 
     public AudioSource hitSound; // Reference to the AudioSource for the hit sound
