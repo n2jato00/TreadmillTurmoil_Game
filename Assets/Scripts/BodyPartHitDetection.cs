@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BodyPartHitDetection : MonoBehaviour
@@ -5,7 +7,6 @@ public class BodyPartHitDetection : MonoBehaviour
     public delegate void BodyPartHit(string bodyPart, Rigidbody rb);
     public static event BodyPartHit OnBodyPartHit;
 
-    public float cooldownTime = 0.3f; // Time in seconds before a new hit can be accepted
     private bool canHit = true;
 
     public AudioSource hitSound; // Reference to the AudioSource for the hit sound
@@ -36,9 +37,12 @@ public class BodyPartHitDetection : MonoBehaviour
                     OnBodyPartHit(gameObject.tag, rb);
                     PlayHitSound(); // Play the hit sound
                     PlayScreamSound();
+
+                    // Change item layer after hit
+                    rb.gameObject.layer = 6;
                 }
                 canHit = false;
-                Invoke("ResetHit", cooldownTime);
+                StartCoroutine(ResetHitDelay(0.25f));
             }
         }
     }
@@ -57,10 +61,13 @@ public class BodyPartHitDetection : MonoBehaviour
             screamSound.Play();
         }
     }
-
-    // The method that allows the reception of hits
-    void ResetHit()
+    private IEnumerator ResetHitDelay(float delay)
     {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Set the "Sprint" parameter to false after the delay
         canHit = true;
     }
+
 }

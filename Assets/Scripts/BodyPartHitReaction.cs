@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BodyPartHitReaction : MonoBehaviour
@@ -6,7 +8,7 @@ public class BodyPartHitReaction : MonoBehaviour
     public float forwardSpeed = 0.2f;
 
     [Tooltip("How fast the character moves backward after being hit.")]
-    public float hitReactionSpeed = 2.3f;
+    private float hitReactionSpeed = 2.3f;
 
     [Tooltip("How long the character moves backward after being hit.")]
     public float hitReactionDuration = 0.5f;
@@ -101,8 +103,8 @@ public class BodyPartHitReaction : MonoBehaviour
         if (bodyPart == "Head" && rb.gameObject.tag != "Test")
         {
          
-            hitReactionSpeed = -1.5f;
-            
+            hitReactionSpeed = -2.0f;
+            StartCoroutine(GameOverDelay(0.8f));
         }
         else if (bodyPart != "Leg" && rb.gameObject.tag != "Test")
         {
@@ -114,5 +116,12 @@ public class BodyPartHitReaction : MonoBehaviour
             hitReactionSpeed = 2.3f;
         }
     }
+    private IEnumerator GameOverDelay(float delay)
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
 
+        // Set the "Sprint" parameter to false after the delay
+        gameOver.EndGame();
+    }
 }

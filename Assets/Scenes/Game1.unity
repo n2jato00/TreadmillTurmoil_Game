@@ -161,7 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -377,7 +376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 1875637545}
   acceptedLayer:
@@ -421,7 +419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -592,7 +589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -720,7 +716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -764,7 +759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 1875637545}
   acceptedLayer:
@@ -1717,7 +1711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -2325,7 +2318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 1875637545}
   acceptedLayer:
@@ -2448,7 +2440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -2625,7 +2616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 1875637545}
   acceptedLayer:
@@ -2872,7 +2862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -3952,7 +3941,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 0.2
-  hitReactionSpeed: 2.3
   hitReactionDuration: 0.5
   timeBeforeGameEnds: 5
   gameOver: {fileID: 606807288}
@@ -4154,7 +4142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 1875637545}
   acceptedLayer:
@@ -4489,7 +4476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 1875637545}
   acceptedLayer:
@@ -4612,7 +4598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -5152,7 +5137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 1875637545}
   acceptedLayer:
@@ -5234,7 +5218,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 0.2
-  hitReactionSpeed: 2.3
   hitReactionDuration: 0.5
   timeBeforeGameEnds: 5
   gameOver: {fileID: 606807288}
@@ -5288,7 +5271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -6338,7 +6320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -6934,7 +6915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -7131,7 +7111,6 @@ MonoBehaviour:
   - {fileID: 8944106310148983939, guid: 74d85c9bca314ec4db9088840945894c, type: 3}
   - {fileID: 6534703929432661437, guid: 362c53a4f0edeb04e826e908c772e2f3, type: 3}
   itemLifetime: 5
-  createNewItemTime: 0.25
   distanceInFrontOfCamera: 1.6
   heightAboveCamera: -0.41
   lateralOffsetFromCamera: 0.1
@@ -7412,7 +7391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.8
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 622323117}
   acceptedLayer:
@@ -7640,7 +7618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 0.25
   hitSound: {fileID: 982231487}
   screamSound: {fileID: 1875637545}
   acceptedLayer:
