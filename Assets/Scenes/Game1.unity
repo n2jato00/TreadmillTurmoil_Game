@@ -546,7 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1331518328}
   multiplierText: {fileID: 1256268201}
-  playerTransform: {fileID: 1139885224}
+  playerTransform: {fileID: 1360362787}
   highscoreManager: {fileID: 1354726658}
   zMultiplierStart: -3
   zMultiplierEnd: -1.5
@@ -3923,11 +3923,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e7f343cb1382044a735773c1704f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1139885224 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2686890238580842728, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
-  m_PrefabInstance: {fileID: 1332249161}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1139885225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5233,6 +5228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e7f343cb1382044a735773c1704f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1360362787 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d599d99e0394e64389bc8a9b3ae39dc, type: 3}
+  m_PrefabInstance: {fileID: 428069587}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1432284385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8817898888258712963, guid: 6d599d99e0394e64389bc8a9b3ae39dc, type: 3}
