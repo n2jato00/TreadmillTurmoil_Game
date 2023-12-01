@@ -103,7 +103,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2432199644256933194}
   serializedVersion: 4
-  m_Mass: 10
+  m_Mass: 9
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21c2d21f8d62ff43b682a953e5af620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxThrowForce: 49
+  maxThrowForce: 47
   minSwipeThreshold: 5
   followSpeed: 5
 --- !u!135 &5708379018158810020
