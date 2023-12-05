@@ -266,7 +266,7 @@ PlayerSettings:
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 1
+  androidUseCustomKeystore: 0
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -949,7 +949,7 @@ PlayerSettings:
   cloudProjectId: 2a7bac3e-ba55-4951-9c30-fe6f73bf1c80
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: CurveBall
+  projectName: Treadmill Turmoil
   organizationId: mctomak93
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
