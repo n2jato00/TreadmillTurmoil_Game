@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class GameOver : MonoBehaviour
 {
     public GameObject gameOverPanel;
-    public AudioSource backgroundMusic; // Reference to your background music AudioSource
+    public PauseGameHandler pauseGameHandler; // Lis‰‰ t‰m‰ Unity Inspectorissa
 
     void Start()
     {
@@ -21,9 +21,9 @@ public class GameOver : MonoBehaviour
         gameOverPanel.SetActive(true);
 
         // Stop the background music when the game is over
-        if (backgroundMusic != null)
+        if (pauseGameHandler != null && pauseGameHandler.backgroundMusic != null)
         {
-            backgroundMusic.Stop();
+            pauseGameHandler.backgroundMusic.Stop();
         }
     }
 
