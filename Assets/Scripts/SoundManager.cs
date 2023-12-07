@@ -2,49 +2,79 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource musicSource;
-    public AudioSource[] sfxSources;
+    public static SoundManager instance;
 
-    private bool isSoundMuted = false;
+    public AudioSource hitSound; // Reference to the AudioSource for the hit sound
+    public AudioSource screamSound;
+    public AudioSource ouchSound;
+    public AudioSource runningSound;
+    public static bool sound = true;
 
+    private void OnEnable()
+    {
+        BodyPartHitDetection.OnBodyPartHit += HandleBodyPartHit;
+    }
+
+    private void OnDisable()
+    {
+        BodyPartHitDetection.OnBodyPartHit -= HandleBodyPartHit;
+    }
     private void Start()
     {
-        // Ensure the initial state of sound matches the toggle state
-        SetSoundState(isSoundMuted);
-    }
-
-    public void ToggleSound()
-    {
-        isSoundMuted = !isSoundMuted;
-        SetSoundState(isSoundMuted);
-    }
-
-    private void SetSoundState(bool isMuted)
-    {
-        // Toggle music playback based on the state
-        if (isMuted)
+        if (sound == true)
         {
-            musicSource.Pause(); // Pause or stop playing music
+            PlayRunningSound();
+        }
+       
+    }
+    void HandleBodyPartHit(string bodyPart, Rigidbody rb)
+    {
+        // T‰ss‰ voit toistaa ‰‰ni‰ riippuen ruumiinosasta
+        if (bodyPart != "Leg")
+        {
+            PlayHitSound();
+            PlayOuchSound();
+        }
+        else if (bodyPart == "Leg")
+        {
+            PlayScreamSound();
+            PlayHitSound();
+        }
+
+    }
+    void PlayOuchSound()
+    {
+        if (ouchSound != null && sound == true)
+        {
+            ouchSound.Play();
+        }
+    }
+    void PlayHitSound()
+    {
+        if (hitSound != null && sound == true)
+        {
+            hitSound.Play();
+        }
+    }
+
+    void PlayScreamSound()
+    {
+        if (screamSound != null && sound == true)
+        {
+            screamSound.Play();
+        }
+    }
+
+    void PlayRunningSound()
+    {
+        if (runningSound != null && sound == true)
+        {
+            runningSound.Play();
         }
         else
         {
-            musicSource.Play(); // Start or resume playing music
-        }
-
-        // Toggle SFX playback based on the state
-        foreach (var sfxSource in sfxSources)
-        {
-            if (sfxSource != null)
-            {
-                if (isMuted)
-                {
-                    sfxSource.Pause(); // Pause or stop playing SFX
-                }
-                else
-                {
-                    sfxSource.UnPause(); // Resume playing SFX
-                }
-            }
+            runningSound.Pause();
         }
     }
+    
 }

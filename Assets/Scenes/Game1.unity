@@ -161,8 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -376,8 +374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -419,8 +415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -589,8 +583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -716,8 +708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -759,8 +749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -774,7 +762,6 @@ GameObject:
   m_Component:
   - component: {fileID: 308859918}
   - component: {fileID: 308859917}
-  - component: {fileID: 308859920}
   m_Layer: 0
   m_Name: PanelHandler
   m_TagString: Untagged
@@ -811,102 +798,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &308859920
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308859916}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7f53c15d6804c984d9d2a28f29e7cf22, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.3
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &344411230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1029,7 +920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 353442599}
-  - component: {fileID: 353442598}
+  - component: {fileID: 353442600}
   m_Layer: 0
   m_Name: SoundHandler
   m_TagString: Untagged
@@ -1037,20 +928,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &353442598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353442597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: badf3b02c041f8c4d903cdb3be10626b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentPanel: {fileID: 1592798849}
-  SecondPanel: {fileID: 781662959}
 --- !u!4 &353442599
 Transform:
   m_ObjectHideFlags: 0
@@ -1066,6 +943,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &353442600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353442597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ace015609035349953a57309b5dffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSound: {fileID: 982231487}
+  screamSound: {fileID: 1875637545}
+  ouchSound: {fileID: 622323117}
+  runningSound: {fileID: 1961041579}
 --- !u!1 &419311235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,8 +1604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -1840,7 +1731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 953567436}
-  backgroundMusic: {fileID: 308859920}
+  backgroundMusic: {fileID: 0}
 --- !u!1 &622323115
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,8 +2209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -2440,8 +2329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -2528,9 +2415,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 353442598}
-        m_TargetAssemblyTypeName: PanelHandler, Assembly-CSharp
-        m_MethodName: TogglePanels
+      - m_Target: {fileID: 1308146178}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SoundOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2616,8 +2503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -2862,8 +2747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -2876,9 +2759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 883656212}
-  - component: {fileID: 883656211}
   - component: {fileID: 883656213}
-  - component: {fileID: 883656214}
   m_Layer: 0
   m_Name: MusicHandler
   m_TagString: Untagged
@@ -2886,20 +2767,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &883656211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883656210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: badf3b02c041f8c4d903cdb3be10626b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentPanel: {fileID: 2046428003}
-  SecondPanel: {fileID: 1202033872}
 --- !u!4 &883656212
 Transform:
   m_ObjectHideFlags: 0
@@ -2926,7 +2793,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c00032554fc914d4d9b0aa5feac645fe, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.349
   m_Pitch: 1
   Loop: 1
@@ -3011,19 +2878,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &883656214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883656210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23babb886c8292f43bfa189f73f8d6b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 883656213}
 --- !u!1 &897657836
 GameObject:
   m_ObjectHideFlags: 0
@@ -4137,8 +3991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -4225,21 +4077,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 883656211}
-        m_TargetAssemblyTypeName: PanelHandler, Assembly-CSharp
-        m_MethodName: TogglePanels
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 883656214}
-        m_TargetAssemblyTypeName: MusicManager, Assembly-CSharp
-        m_MethodName: ToggleMusic
+      - m_Target: {fileID: 1308146178}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: MusicOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4471,8 +4311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -4593,8 +4431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -4745,6 +4581,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303375476}
   m_CullTransparentMesh: 1
+--- !u!1 &1308146177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308146179}
+  - component: {fileID: 1308146178}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1308146178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308146177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add383012e9ace745b368480eb00b36e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 883656213}
+  soundOnPanel: {fileID: 1592798849}
+  soundOffPanel: {fileID: 781662959}
+  musicOnPanel: {fileID: 2046428003}
+  musicOffPanel: {fileID: 1202033872}
+--- !u!4 &1308146179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308146177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.44799298, y: 0.82169783, z: -1.6595972}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320738446
 GameObject:
   m_ObjectHideFlags: 0
@@ -5132,8 +5017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -5271,8 +5154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -5860,9 +5741,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 353442598}
-        m_TargetAssemblyTypeName: PanelHandler, Assembly-CSharp
-        m_MethodName: TogglePanels
+      - m_Target: {fileID: 1308146178}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SoundOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6320,8 +6201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -6915,11 +6794,137 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
+--- !u!1 &1961041578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961041580}
+  - component: {fileID: 1961041579}
+  m_Layer: 0
+  m_Name: RunningSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1961041579
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961041578}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7f53c15d6804c984d9d2a28f29e7cf22, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1961041580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961041578}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.44799298, y: 0.82169783, z: -1.6595972}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2000781105
 GameObject:
   m_ObjectHideFlags: 0
@@ -7212,21 +7217,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 883656211}
-        m_TargetAssemblyTypeName: PanelHandler, Assembly-CSharp
-        m_MethodName: TogglePanels
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 883656214}
-        m_TargetAssemblyTypeName: MusicManager, Assembly-CSharp
-        m_MethodName: ToggleMusic
+      - m_Target: {fileID: 1308146178}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: MusicOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7391,8 +7384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 622323117}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -7618,8 +7609,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b43e5f38f53a145a0d9d06f50d7c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 982231487}
-  screamSound: {fileID: 1875637545}
   acceptedLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -7680,7 +7669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492ace203388e714687e4c594b5bd099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic: {fileID: 308859920}
+  backgroundMusic: {fileID: 0}
 --- !u!1 &2124689386
 GameObject:
   m_ObjectHideFlags: 0
@@ -7866,3 +7855,5 @@ SceneRoots:
   - {fileID: 1875637546}
   - {fileID: 622323116}
   - {fileID: 1354726659}
+  - {fileID: 1308146179}
+  - {fileID: 1961041580}

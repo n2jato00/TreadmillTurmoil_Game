@@ -9,19 +9,11 @@ public class BodyPartHitDetection : MonoBehaviour
 
     private bool canHit = true;
 
-    public AudioSource hitSound; // Reference to the AudioSource for the hit sound
-    public AudioSource screamSound;
-
     // Layer that is intended to be accepted in collisions.
     public LayerMask acceptedLayer;
 
     private void Start()
     {
-        // Ensure that the AudioSource is set up in the Unity Inspector
-        if (hitSound == null)
-        {
-            Debug.LogError("Hit sound AudioSource is not assigned!");
-        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -35,9 +27,6 @@ public class BodyPartHitDetection : MonoBehaviour
                 if (rb != null)
                 {
                     OnBodyPartHit(gameObject.tag, rb);
-                    PlayHitSound(); // Play the hit sound
-                    PlayScreamSound();
-
                     // Change item layer after hit
                     rb.gameObject.layer = 6;
                 }
@@ -47,20 +36,6 @@ public class BodyPartHitDetection : MonoBehaviour
         }
     }
 
-    void PlayHitSound()
-    {
-        if (hitSound != null)
-        {
-            hitSound.Play();
-        }
-    }
-    void PlayScreamSound()
-    { 
-        if (screamSound != null)
-        {
-            screamSound.Play();
-        }
-    }
     private IEnumerator ResetHitDelay(float delay)
     {
         // Wait for the specified delay
@@ -69,5 +44,4 @@ public class BodyPartHitDetection : MonoBehaviour
         // Set the "Sprint" parameter to false after the delay
         canHit = true;
     }
-
 }
