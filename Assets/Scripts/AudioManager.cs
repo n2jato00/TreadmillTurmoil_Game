@@ -98,18 +98,23 @@ public class AudioManager : MonoBehaviour
         musicOffPanel.SetActive(!musicEnabled);
     }
 
+
     private void SavePlayerPrefs()
     {
         PlayerPrefs.SetInt(soundPrefsKey, soundEnabled ? 1 : 0);
         PlayerPrefs.SetInt(musicPrefsKey, musicEnabled ? 1 : 0);
+        PlayerPrefs.SetInt("SoundManagerSound", SoundManager.sound ? 1 : 0); // Tallenna SoundManager.sound
         PlayerPrefs.Save();
     }
+
 
     private void LoadPlayerPrefs()
     {
         soundEnabled = PlayerPrefs.GetInt(soundPrefsKey, 1) == 1;
         musicEnabled = PlayerPrefs.GetInt(musicPrefsKey, 1) == 1;
 
-        
+        // Lataa SoundManager.sound PlayerPrefistä
+        SoundManager.sound = PlayerPrefs.GetInt("SoundManagerSound", 1) == 1;
     }
+
 }

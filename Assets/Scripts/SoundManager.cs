@@ -19,7 +19,7 @@ public class SoundManager : MonoBehaviour
     {
         BodyPartHitDetection.OnBodyPartHit -= HandleBodyPartHit;
     }
-    private void Start()
+    private void Awake()
     {
         if (sound == true)
         {
@@ -71,10 +71,6 @@ public class SoundManager : MonoBehaviour
         {
             runningSound.Play();
         }
-        else
-        {
-            runningSound.Pause();
-        }
     }
-    
+
 }

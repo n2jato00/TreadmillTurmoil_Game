@@ -26,7 +26,16 @@ public class PauseGameHandler : MonoBehaviour
     private IEnumerator ResumeGameWithDelay()
     {
         Time.timeScale = 1;
-        backgroundMusic.Play();
+        if (SoundManager.sound == true)
+        { 
+            backgroundMusic.Play(); 
+        }
+        else
+        {
+            backgroundMusic.Stop();
+        }
+            
+
         yield return new WaitForSeconds(0.5f);
         PauseManager.canThrow = true;
        
