@@ -1731,7 +1731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 953567436}
-  backgroundMusic: {fileID: 0}
+  pauseGameHandler: {fileID: 2123274411}
 --- !u!1 &622323115
 GameObject:
   m_ObjectHideFlags: 0
