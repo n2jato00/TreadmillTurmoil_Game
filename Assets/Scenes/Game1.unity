@@ -7560,8 +7560,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1320738447}
   - {fileID: 494480045}
+  - {fileID: 1320738447}
   - {fileID: 1053975631}
   - {fileID: 953567439}
   m_Father: {fileID: 0}
@@ -7721,7 +7721,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 0
 --- !u!222 &2124689388
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7801,7 +7801,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 0
 --- !u!222 &2135972212
 CanvasRenderer:
   m_ObjectHideFlags: 0
