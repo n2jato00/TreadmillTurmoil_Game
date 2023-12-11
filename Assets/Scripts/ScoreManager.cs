@@ -76,6 +76,6 @@ public class ScoreManager : MonoBehaviour
     void UpdateMultiplierText()
     {
         int zMultiplier = CalculateZMultiplier();
-        multiplierText.text = "x" + zMultiplier.ToString();
+        multiplierText.text = zMultiplier.ToString();
     }
 }
