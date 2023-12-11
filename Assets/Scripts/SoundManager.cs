@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource screamSound;
     public AudioSource ouchSound;
     public AudioSource runningSound;
+    public AudioSource headShot;
     public static bool sound = true;
 
     private void OnEnable()
@@ -29,8 +30,13 @@ public class SoundManager : MonoBehaviour
     }
     void HandleBodyPartHit(string bodyPart, Rigidbody rb)
     {
-        // Tässä voit toistaa ääniä riippuen ruumiinosasta
-        if (bodyPart != "Leg")
+        // Tï¿½ssï¿½ voit toistaa ï¿½ï¿½niï¿½ riippuen ruumiinosasta
+        if (bodyPart == "Head" && rb.gameObject.tag == "Banana")
+        { 
+            PlayHitSound();
+            PlayHeadShot();
+        }
+        else if (bodyPart != "Leg")
         {
             PlayHitSound();
             PlayOuchSound();
@@ -40,6 +46,7 @@ public class SoundManager : MonoBehaviour
             PlayScreamSound();
             PlayHitSound();
         }
+
 
     }
     void PlayOuchSound()
@@ -70,6 +77,14 @@ public class SoundManager : MonoBehaviour
         if (runningSound != null && sound == true)
         {
             runningSound.Play();
+        }
+    }
+
+     void PlayHeadShot()
+    {
+        if (hitSound != null && sound == true)
+        {
+            headShot.Play();
         }
     }
 
