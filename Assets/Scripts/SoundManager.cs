@@ -33,7 +33,6 @@ public class SoundManager : MonoBehaviour
         // T�ss� voit toistaa ��ni� riippuen ruumiinosasta
         if (bodyPart == "Head" && rb.gameObject.tag == "Banana")
         { 
-            PlayHitSound();
             PlayHeadShot();
         }
         else if (bodyPart != "Leg")
