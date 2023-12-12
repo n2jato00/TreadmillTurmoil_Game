@@ -4,6 +4,7 @@ public class PanelHandler : MonoBehaviour
 {
     public GameObject CurrentPanel;  // This will be your main menu panel
     public GameObject SecondPanel;     // This will be your options panel
+    public GameObject popupPanel;
 
     // This method toggles between the main menu and options
     public void TogglePanels()
@@ -25,5 +26,22 @@ public class PanelHandler : MonoBehaviour
     {
         CurrentPanel.SetActive(true);
         SecondPanel.SetActive(false);
+    }
+
+     public void OpenPopup()
+    {
+        if (popupPanel != null)
+        {
+            popupPanel.SetActive(true);
+        }
+    }
+
+    // Call this method to close the popup panel
+    public void ClosePopup()
+    {
+        if (popupPanel != null)
+        {
+            popupPanel.SetActive(false);
+        }
     }
 }
