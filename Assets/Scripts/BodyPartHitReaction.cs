@@ -100,24 +100,22 @@ public class BodyPartHitReaction : MonoBehaviour
         hitReactionEndTime = Time.time + hitReactionDuration;
         if (bodyPart == "Head" && rb.gameObject.tag == "Heavy")
         {
-            StartCoroutine(GameOverDelay(0.1f));
+            hitReactionSpeed = 3f;
         }
        
         else if (bodyPart == "Head" && rb.gameObject.tag == "Banana")
         {
-         
             hitReactionSpeed = -2.0f;
-            StartCoroutine(GameOverDelay(0.8f));
+            timeOutsideLimits = 2f;
         }
         else if (bodyPart == "Head" && rb.gameObject.tag == "Special")
         {
-
             hitReactionSpeed = -2.0f;
-            StartCoroutine(GameOverDelay(0.8f));
+            timeOutsideLimits = 2f;
         }
-        else if (bodyPart != "Leg" && rb.gameObject.tag != "Test")
+        else if (bodyPart != "Leg" && rb.gameObject.tag == "Banana")
         {
-            hitReactionSpeed = 0f;
+            hitReactionSpeed = 0.5f;
         }
         else
         {
