@@ -103,7 +103,7 @@ public class BodyPartHitReaction : MonoBehaviour
             StartCoroutine(GameOverDelay(0.1f));
         }
        
-        else if (bodyPart == "Head" && rb.gameObject.tag != "Test")
+        else if (bodyPart == "Head" && rb.gameObject.tag == "Banana")
         {
          
             hitReactionSpeed = -2.0f;
