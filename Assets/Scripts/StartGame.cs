@@ -5,8 +5,16 @@ public class StartGame : MonoBehaviour
 {
     public void LoadGameScene()
     {
-        PauseManager.canThrow = true;
-        SceneManager.LoadScene("Game1");
+        
+        if (PlayerPrefs.GetInt("TutorialComplete") == 1)
+        {
+            SceneManager.LoadScene("StartScreen");
+        }
+        else
+        {
+            PauseManager.canThrow = true;
+            SceneManager.LoadScene("Game1"); // Move the game, if tutorial is completed
+        }
     }
     public void LoadStartScreen()
     {
