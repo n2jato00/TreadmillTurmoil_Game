@@ -9,6 +9,12 @@ public class SoundManager : MonoBehaviour
     public AudioSource ouchSound;
     public AudioSource runningSound;
     public AudioSource headShot;
+    public AudioSource dumbbellHead;
+    public AudioSource bowlingballHead;
+    public AudioSource owwSound;
+    public AudioSource chickenSound;
+    public AudioSource catSound;
+
     public static bool sound = true;
 
     private void OnEnable()
@@ -87,4 +93,48 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-}
+     void Dumbhead()
+    {
+        if (hitSound != null && sound == true)
+        {
+            dumbbellHead.Play();
+        }
+    }
+
+     void BallHead()
+    {
+        if (hitSound != null && sound == true)
+        {
+            bowlingballHead.Play();
+        }
+    }
+
+     void Oww()
+    {
+        if (hitSound != null && sound == true)
+        {
+            owwSound.Play();
+        }
+    }
+
+     void Cat()
+    {
+        if (hitSound != null && sound == true)
+        {
+            catSound.Play();
+        }
+    }
+
+     void Chicken() {
+
+     
+        if (hitSound != null && sound == true)
+        {
+            chickenSound.Play();
+        }
+     }
+   
+ }
+
+
+

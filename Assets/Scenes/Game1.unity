@@ -1000,7 +1000,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 13a4e14e3615eb445bdcf06e2923387f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1596,6 +1596,11 @@ MonoBehaviour:
   ouchSound: {fileID: 622323117}
   runningSound: {fileID: 1961041579}
   headShot: {fileID: 1540577698}
+  dumbbellHead: {fileID: 1715499430}
+  bowlingballHead: {fileID: 1321485642}
+  owwSound: {fileID: 1349118454}
+  chickenSound: {fileID: 248989325}
+  catSound: {fileID: 988913089}
 --- !u!1 &419311235
 GameObject:
   m_ObjectHideFlags: 0
@@ -4813,7 +4818,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6990681398091e44792f67b1d718b8a4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -6438,7 +6443,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4b35b729e0d16244ab0c8ccc51e67419, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -6880,7 +6885,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 286366c706e082140bf971451bb5b8bc, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -8356,7 +8361,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d81c4c329c5df9f4d866e91e1657b426, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
