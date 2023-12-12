@@ -98,11 +98,15 @@ public class BodyPartHitReaction : MonoBehaviour
     {
         isHit = true;
         hitReactionEndTime = Time.time + hitReactionDuration;
-        if (bodyPart == "Head" && rb.gameObject.tag == "Heavy")
+        if (bodyPart == "Head" && rb.gameObject.tag == "Dumbbell")
         {
             hitReactionSpeed = 3f;
         }
-       
+        else if (bodyPart == "Head" && rb.gameObject.tag == "Bowlingball")
+        {
+            hitReactionSpeed = 3f;
+        }
+
         else if (bodyPart == "Head" && rb.gameObject.tag == "Banana")
         {
             hitReactionSpeed = -2.0f;

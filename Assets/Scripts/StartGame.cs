@@ -24,6 +24,10 @@ public class StartGame : MonoBehaviour
             SceneManager.LoadScene("Game1"); // Move the game, if tutorial is completed
         }
     }
+    public void ForceLoadTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
     public void QuitGame()
     {
         Application.Quit();
