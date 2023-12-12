@@ -98,9 +98,12 @@ public class BodyPartHitReaction : MonoBehaviour
     {
         isHit = true;
         hitReactionEndTime = Time.time + hitReactionDuration;
-
+        if (bodyPart == "Head" && rb.gameObject.tag == "Heavy")
+        {
+            StartCoroutine(GameOverDelay(0.1f));
+        }
        
-        if (bodyPart == "Head" && rb.gameObject.tag != "Test")
+        else if (bodyPart == "Head" && rb.gameObject.tag != "Test")
         {
          
             hitReactionSpeed = -2.0f;
