@@ -60,6 +60,29 @@ public class PlayerAnimationHandler : MonoBehaviour
                     break;
             }
         }
+        else if (rb.gameObject.tag == "Special")
+        {
+            switch (bodyPart)
+            {
+                case "Head":
+                    triggerName = "Eating";
+                    animator.SetBool("Sprint", true);
+                    StartCoroutine(ResetSprintAfterDelay(0.8f));
+                    break;
+                case "Torso":
+                    triggerName += weight + "Hit";
+                    break;
+                case "Arm":
+                    triggerName += weight + "Hit";
+                    break;
+                case "Leg":
+                    triggerName += weight + "Hit";
+                    break;
+                default:
+                    triggerName += "NormalHit";
+                    break;
+            }
+        }
         else
         {
             // Default behavior for other tags

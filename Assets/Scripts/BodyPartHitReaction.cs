@@ -109,6 +109,12 @@ public class BodyPartHitReaction : MonoBehaviour
             hitReactionSpeed = -2.0f;
             StartCoroutine(GameOverDelay(0.8f));
         }
+        else if (bodyPart == "Head" && rb.gameObject.tag == "Special")
+        {
+
+            hitReactionSpeed = -2.0f;
+            StartCoroutine(GameOverDelay(0.8f));
+        }
         else if (bodyPart != "Leg" && rb.gameObject.tag != "Test")
         {
             hitReactionSpeed = 0f;

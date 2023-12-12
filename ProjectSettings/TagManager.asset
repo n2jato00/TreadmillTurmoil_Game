@@ -12,6 +12,8 @@ TagManager:
   - RagdollPart
   - Banana
   - Treadmill
+  - Heavy
+  - Special
   layers:
   - Default
   - TransparentFX
