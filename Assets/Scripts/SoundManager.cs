@@ -41,6 +41,26 @@ public class SoundManager : MonoBehaviour
         { 
             PlayHeadShot();
         }
+        else if (bodyPart == "Head" && rb.gameObject.tag == "Dumbbell")
+        {
+            Oww();
+            Dumbhead();
+        }
+        else if (bodyPart == "Head" && rb.gameObject.tag == "Bowlingball")
+        {
+            Oww();
+            BallHead();
+        }
+        else if (rb.gameObject.tag == "Cat")
+        {
+            PlayHitSound();
+            Cat();
+        }
+        else if (rb.gameObject.tag == "Chicken")
+        {
+            PlayHitSound();
+            Chicken();
+        }
         else if (bodyPart != "Leg")
         {
             PlayHitSound();

@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 06043ae29cde9924e8a8393a5fe205c7, type: 3}
       propertyPath: m_TagString
-      value: Heavy
+      value: Bowlingball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

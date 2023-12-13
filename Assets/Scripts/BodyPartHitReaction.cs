@@ -98,26 +98,19 @@ public class BodyPartHitReaction : MonoBehaviour
     {
         isHit = true;
         hitReactionEndTime = Time.time + hitReactionDuration;
-        if (bodyPart == "Head" && rb.gameObject.tag == "Dumbbell")
-        {
-            hitReactionSpeed = 3f;
-        }
-        else if (bodyPart == "Head" && rb.gameObject.tag == "Bowlingball")
+
+        if (bodyPart == "Head" && (rb.gameObject.tag == "Dumbbell" || rb.gameObject.tag == "Bowlingball"))
         {
             hitReactionSpeed = 3f;
         }
 
-        else if (bodyPart == "Head" && rb.gameObject.tag == "Banana")
+        else if (bodyPart == "Head" && (rb.gameObject.tag == "Banana" || rb.gameObject.tag == "Special"))
         {
             hitReactionSpeed = -2.0f;
             timeOutsideLimits = 2f;
         }
-        else if (bodyPart == "Head" && rb.gameObject.tag == "Special")
-        {
-            hitReactionSpeed = -2.0f;
-            timeOutsideLimits = 2f;
-        }
-        else if (bodyPart != "Leg" && rb.gameObject.tag == "Banana")
+
+        else if (bodyPart != "Leg" && (rb.gameObject.tag == "Banana" || rb.gameObject.tag == "Special"))
         {
             hitReactionSpeed = 0.5f;
         }
