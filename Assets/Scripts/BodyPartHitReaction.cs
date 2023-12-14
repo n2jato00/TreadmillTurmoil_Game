@@ -101,7 +101,7 @@ public class BodyPartHitReaction : MonoBehaviour
 
         if (bodyPart == "Head" && (rb.gameObject.tag == "Dumbbell" || rb.gameObject.tag == "Bowlingball"))
         {
-            hitReactionSpeed = 3f;
+            hitReactionSpeed = 3.5f;
         }
 
         else if (bodyPart == "Head" && (rb.gameObject.tag == "Banana" || rb.gameObject.tag == "Special"))

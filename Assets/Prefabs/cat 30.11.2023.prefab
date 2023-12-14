@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxThrowForce: 47
-  minSwipeThreshold: 10
+  minSwipeThreshold: 5
   followSpeed: 5
 --- !u!54 &8415474490392176183
 Rigidbody:

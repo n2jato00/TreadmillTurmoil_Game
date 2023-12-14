@@ -40,23 +40,16 @@ public class ThrowItem : MonoBehaviour
 
     private void HandleInput()
     {
-        if (isThrown)
+        if (isThrown || Time.timeScale == 0 || !PauseManager.canThrow)
             return;
 
-        if (Time.timeScale == 0 || !PauseManager.canThrow)
-            return;
-
-        for (int i = 0; i < Input.touchCount; i++)
+        // Tarkista, onko kosketuksia olemassa
+        if (Input.touchCount > 0)
         {
-            Touch touch = Input.GetTouch(i);
+            Touch touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Began)
+            if (touch.phase == TouchPhase.Began && !EventSystem.current.IsPointerOverGameObject(touch.fingerId))
             {
-                if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
-                {
-                    return;
-                }
-
                 startSwipePos = touch.position;
                 isDragging = true;
                 rb.useGravity = false;
@@ -76,6 +69,8 @@ public class ThrowItem : MonoBehaviour
             }
         }
     }
+
+
 
     private void HandleDrag()
     {
